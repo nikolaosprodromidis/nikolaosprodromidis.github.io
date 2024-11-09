@@ -6,38 +6,50 @@
     <title>Nikolaos Prodromidis - Academic Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif; /* Use a simple, readable font */
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #fff; /* White background */
+            color: #333; /* Dark gray text for readability */
+            line-height: 1.6; /* Increase line spacing for readability */
+            font-size: 18px; /* Increase font size for easier reading */
         }
         header {
-            background: #007BFF;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            align-items: center;
+        }
+        header h1 {
+            font-family: 'Georgia', serif; /* A serif font for uniqueness */
+            font-size: 36px; /* Larger font size for your name */
+            margin: 0;
+        }
+        nav {
+            font-size: 18px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333; /* Text color for links */
+        }
+        nav a:hover {
+            text-decoration: underline; /* Add underline on hover */
         }
         section {
-            padding: 20px;
-            margin: 20px;
-            background: #fff;
-            border-radius: 5px;
+            padding: 40px 40px;
+            margin: 40px;
         }
         h2 {
-            color: #007BFF;
+            font-size: 28px;
+            margin-bottom: 20px;
         }
         img {
-            max-width: 250px; /* Ensure it’s not too large */
-            height: auto;     /* Maintain aspect ratio */
-            border-radius: 50%; /* Circular image */
+            max-width: 250px;
+            height: auto;
+            border-radius: 50%;
             display: block;
-            margin: 0 auto; /* Center the image */
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #007BFF;
-            color: white;
+            margin: 20px auto;
         }
         .container {
             display: flex;
@@ -50,16 +62,24 @@
         .container .text {
             max-width: 60%;
         }
-        .bold {
-            font-weight: bold;
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #f4f4f4; /* Subtle background for footer */
         }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Nikolaos Prodromidis</h1>
-        <h3>Academic Website</h3>
+        <nav>
+            <a href="#research">Research</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#cv">Curriculum Vitae</a>
+        </nav>
     </header>
+
     <section>
         <h2>About Me</h2>
         <div class="container">
@@ -72,8 +92,9 @@
             </div>
         </div>
     </section>
-    <section>
-        <h2 class="bold">Research</h2>
+
+    <section id="research">
+        <h2>Research</h2>
         <h3>Working Papers</h3>
         <p><strong>Regulating Working Hours and Health</strong><br>
         <em>Abstract:</em> Regulating working hours is one of the oldest concerns of employment legislation due to its importance in protecting workers' health and maintaining labor productivity. We provide new evidence of the causal effect of reduced working hours on mortality using a full population register, exploiting exogenous variation from a massive nationwide policy in Sweden that reduced working hours from 56 to 48 hours for about 1 in 4 salaried workers. Notably, the policy was initially introduced as a nationwide trial for certain occupations in 1920 and became permanent in 1926. By exploiting variation across occupations using difference-in-differences and event-study models, we show that reduced working hours decreased mortality by around 20%, with the effects primarily driven by reductions in heart disease and workplace accidents, and increased the longevity of affected workers by approximately 0.6 years. Our results suggest that many lives could be saved worldwide by reducing long working hours in labor-intensive occupations.</p>
@@ -89,16 +110,24 @@
         <p><em>The 1918–1919 Influenza Pandemic in Economic History.</em> <strong>Oxford Research Encyclopedia of Economics and Finance</strong>, 2022, with M. Karlsson and Daniel Kühnle.</p>
         <p><em>Diabetes prevalence and its relationship with education, wealth, and BMI in 29 low-and middle-income countries.</em> <strong>Diabetes Care</strong>, 2020, with JA Seiglie, ME Marcus, and C. Ebert.</p>
     </section>
-    <section>
-        <h2 class="bold">Teaching</h2>
+
+    <section id="teaching">
+        <h2>Teaching</h2>
         <p><strong>Instructor</strong>: Health Economics Seminar on Low and Middle Income Countries, WS 24/25</p>
         <p><strong>Teaching Assistant</strong>: Causality and Program Evaluation, SS 2024, SS 2023</p>
         <p><strong>TA</strong>: Health Economics I, WS 22/23</p>
         <p><strong>TA</strong>: Health Economics II, SS 22, SS 21, SS 20</p>
         <p><strong>TA</strong>: Health Economics Seminar (Master), WS 19/20, WS 20/21, WS 22/23</p>
     </section>
+
+    <section id="cv">
+        <h2>Curriculum Vitae</h2>
+        <p><a href="CV_URL">Download CV</a></p>
+    </section>
+
     <footer>
         <p>&copy; Nikolaos Prodromidis, 2024</p>
     </footer>
+
 </body>
 </html>
