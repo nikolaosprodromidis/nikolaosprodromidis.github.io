@@ -5,63 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nikolaos Prodromidis - Academic Website</title>
     <style>
+        /* General styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
+            color: #333;
         }
+
+        /* Header and Navigation */
         header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
             background: #007BFF;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        nav {
+            margin-left: auto;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d1e7ff;
+        }
+
+        /* Section styling */
+        .content {
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+        }
+
+        .content img {
+            width: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
         section {
             padding: 20px;
-            margin: 20px;
-            background: #fff;
-            border-radius: 5px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
-        h2 {
+
+        section h2 {
             color: #007BFF;
+            font-size: 1.4em;
         }
-        img {
-            max-width: 200px; /* Adjust the size as needed */
-            border-radius: 50%; /* Makes it circular */
-        }
+
+        /* Footer styling */
         footer {
             text-align: center;
             padding: 20px;
             background: #007BFF;
             color: white;
+            font-size: 0.9em;
+        }
+
+        /* Link styling */
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section spacing */
+        .bold-section-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .cv-link {
+            font-weight: bold;
+            color: #007BFF;
         }
     </style>
 </head>
 <body>
+    <!-- Header with Navigation Links -->
     <header>
         <h1>Nikolaos Prodromidis</h1>
-        <h3>Academic Website</h3>
+        <nav>
+            <a href="#research">Research</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#cv">Curriculum Vitae</a>
+        </nav>
     </header>
-    <section>
-        <h2>About Me</h2>
-        <p>Write a brief introduction about yourself, your research interests, and background.</p>
-        <img src="photo.jpg" alt="Your Photo"> <!-- Ensure the file name matches -->
+
+    <!-- Introduction Section -->
+    <section id="introduction">
+        <div class="content">
+            <img src="photo.jpg" alt="Your Photo">
+            <div>
+                <p>Welcome to my personal website. I am a PhD candidate in Economics at the University of Duisburg-Essen, and my research focuses on topics at the intersection of health and labor economics.</p>
+                <p>In my dissertation, I analyze significant historical events from the early welfare state in Sweden, including the reform establishing the 8-hour workday, major labor strikes, and the expansion of the healthcare sector, along with their consequences. Using early 20th-century Sweden as a case study, I combine high-quality administrative data with quasi-experimental econometric methods to address policy-relevant questions.</p>
+                <p><a href="#cv" class="cv-link">My CV is linked here.</a></p>
+                <p>To contact me, my email is: nikolaos.prodromidis@uni-due.de.</p>
+            </div>
+        </div>
     </section>
-    <section>
-        <h2>Education</h2>
+
+    <!-- Research Section -->
+    <section id="research">
+        <h2>Research</h2>
+        <div class="bold-section-title">Working Papers</div>
+        <p><strong>Title:</strong> Regulating working hours is one of the oldest concerns of employment legislation due to its importance in protecting workers' health and maintaining labor productivity...</p>
+        <p><strong>Abstract:</strong> We provide new evidence of the causal effect of reduced working hours on mortality using a full population register, exploiting exogenous variation...</p>
+
+        <div class="bold-section-title">Work in Progress</div>
+        <p><strong>Title:</strong> Strikes, Social Contacts, and Pandemics</p>
+        <p><strong>Abstract:</strong> This study explores how labor market activities, particularly labor strikes, influence disease transmission during pandemics by altering social interactions...</p>
+
+        <p><strong>Title:</strong> The Long-Term Effects of Hospital Deliveries (with Martin Fischer, Martin Karlsson, Martin Lövdén, and Therese Nilsson)</p>
+        <p><strong>Abstract:</strong> [Description or content pending]</p>
+
+        <div class="bold-section-title">Published Papers</div>
         <ul>
-            <li>PhD, Computer Science - University of XYZ, 2023</li>
-            <li>MSc, Software Engineering - University of ABC, 2020</li>
+            <li><em>The 1918–1919 Influenza Pandemic in Economic History</em>, <strong>Oxford Research Encyclopedia of Economics and Finance</strong>, 2022 (with M. Karlsson and Daniel Kühnle)</li>
+            <li><em>Diabetes prevalence and its relationship with education, wealth, and BMI in 29 low-and middle-income countries</em>, <strong>Diabetes Care</strong>, 2020 (with JA Seiglie, ME Marcus, and C. Ebert)</li>
         </ul>
     </section>
-    <section>
-        <h2>Publications</h2>
+
+    <!-- Teaching Section -->
+    <section id="teaching">
+        <h2>Teaching</h2>
         <ul>
-            <li><a href="link-to-paper1">Title of Paper 1</a></li>
-            <li><a href="link-to-paper2">Title of Paper 2</a></li>
+            <li><strong>Instructor:</strong> Health Economics Seminar on Low and Middle Income Countries, WS 24/25</li>
+            <li><strong>Teaching Assistant:</strong> Causality and Program Evaluation, SS 2024, SS 2023</li>
+            <li><strong>Teaching Assistant:</strong> Health Economics I, WS 22/23</li>
+            <li><strong>Teaching Assistant:</strong> Health Economics II, SS 22, SS 21, SS 20</li>
+            <li><strong>Teaching Assistant:</strong> Health Economics Seminar (Master), WS 19/20, WS 20/21, WS 22/23</li>
         </ul>
     </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; Nikolaos Prodromidis, 2024</p>
     </footer>
