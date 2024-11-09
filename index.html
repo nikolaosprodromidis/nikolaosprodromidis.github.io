@@ -6,13 +6,13 @@
     <title>Nikolaos Prodromidis - Academic Website</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif; /* Use a simple, readable font */
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff; /* White background */
-            color: #333; /* Dark gray text for readability */
-            line-height: 1.6; /* Increase line spacing for readability */
-            font-size: 18px; /* Increase font size for easier reading */
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+            font-size: 18px;
         }
         header {
             display: flex;
@@ -21,8 +21,8 @@
             align-items: center;
         }
         header h1 {
-            font-family: 'Georgia', serif; /* A serif font for uniqueness */
-            font-size: 36px; /* Larger font size for your name */
+            font-family: 'Georgia', serif;
+            font-size: 36px;
             margin: 0;
         }
         nav {
@@ -31,10 +31,10 @@
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #333; /* Text color for links */
+            color: #333;
         }
         nav a:hover {
-            text-decoration: underline; /* Add underline on hover */
+            text-decoration: underline;
         }
         section {
             padding: 40px 40px;
@@ -43,13 +43,6 @@
         h2 {
             font-size: 28px;
             margin-bottom: 20px;
-        }
-        img {
-            max-width: 250px;
-            height: auto;
-            border-radius: 50%;
-            display: block;
-            margin: 20px auto;
         }
         .container {
             display: flex;
@@ -65,7 +58,18 @@
         footer {
             padding: 20px;
             text-align: center;
-            background-color: #f4f4f4; /* Subtle background for footer */
+            background-color: #f4f4f4;
+        }
+        .abstract-text {
+            display: none; /* Hide abstract by default */
+            margin-top: 10px;
+            font-style: italic;
+        }
+        .toggle-abstract {
+            color: #007BFF;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -97,14 +101,23 @@
         <h2>Research</h2>
         <h3>Working Papers</h3>
         <p><strong>Regulating Working Hours and Health</strong><br>
-        <em>Abstract:</em> Regulating working hours is one of the oldest concerns of employment legislation due to its importance in protecting workers' health and maintaining labor productivity. We provide new evidence of the causal effect of reduced working hours on mortality using a full population register, exploiting exogenous variation from a massive nationwide policy in Sweden that reduced working hours from 56 to 48 hours for about 1 in 4 salaried workers. Notably, the policy was initially introduced as a nationwide trial for certain occupations in 1920 and became permanent in 1926. By exploiting variation across occupations using difference-in-differences and event-study models, we show that reduced working hours decreased mortality by around 20%, with the effects primarily driven by reductions in heart disease and workplace accidents, and increased the longevity of affected workers by approximately 0.6 years. Our results suggest that many lives could be saved worldwide by reducing long working hours in labor-intensive occupations.</p>
-        
+        <em>Abstract:</em> <span class="toggle-abstract" onclick="toggleAbstract('abstract1')">Click for abstract +</span>
+        <div id="abstract1" class="abstract-text">
+            Regulating working hours is one of the oldest concerns of employment legislation due to its importance in protecting workers' health and maintaining labor productivity. We provide new evidence of the causal effect of reduced working hours on mortality using a full population register, exploiting exogenous variation from a massive nationwide policy in Sweden that reduced working hours from 56 to 48 hours for about 1 in 4 salaried workers. Notably, the policy was initially introduced as a nationwide trial for certain occupations in 1920 and became permanent in 1926. By exploiting variation across occupations using difference-in-differences and event-study models, we show that reduced working hours decreased mortality by around 20%, with the effects primarily driven by reductions in heart disease and workplace accidents, and increased the longevity of affected workers by approximately 0.6 years. Our results suggest that many lives could be saved worldwide by reducing long working hours in labor-intensive occupations.
+        </div>
+
         <h3>Work in Progress</h3>
         <p><strong>Strikes, Social Contacts, and Pandemics</strong><br>
-        <em>Abstract:</em> This study explores how labor market activities, particularly labor strikes, influence disease transmission during pandemics by altering social interactions. Focusing on the 1918-1920 Great Influenza Pandemic in Sweden, the research investigates whether labor strikes, which increased social contacts, contributed to influenza-related mortality. I exploit staggered exogenous variation in strike timing produced by the expiration dates of collective agreements. Using 389,000 individual-level cause-of-death data and a local-projections staggered difference-in-differences framework, the study compares parishes with and without strikes during the pandemic to analyze their impact on mortality. The results reveal a 30% increase in influenza mortality rates in parishes with strikes, with notable variations across occupations. Specifically, mortality rates rose by 34% among workers and 25% among their families, while no significant effect was found in other professions. The study further examines the mechanisms behind these findings, suggesting that increased indoor worker meetings during strikes exacerbated disease spread. Using a Synthetic Difference-in-Differences approach, the research provides evidence that public gathering bans during strikes had unintended consequences, prompting workers to move their meetings indoors, where the risk of transmission was higher. These findings offer crucial insights for pandemic preparedness, emphasizing the role of labor market dynamics in shaping disease transmission.</p>
+        <em>Abstract:</em> <span class="toggle-abstract" onclick="toggleAbstract('abstract2')">Click for abstract +</span>
+        <div id="abstract2" class="abstract-text">
+            This study explores how labor market activities, particularly labor strikes, influence disease transmission during pandemics by altering social interactions. Focusing on the 1918-1920 Great Influenza Pandemic in Sweden, the research investigates whether labor strikes, which increased social contacts, contributed to influenza-related mortality. I exploit staggered exogenous variation in strike timing produced by the expiration dates of collective agreements. Using 389,000 individual-level cause-of-death data and a local-projections staggered difference-in-differences framework, the study compares parishes with and without strikes during the pandemic to analyze their impact on mortality. The results reveal a 30% increase in influenza mortality rates in parishes with strikes, with notable variations across occupations. Specifically, mortality rates rose by 34% among workers and 25% among their families, while no significant effect was found in other professions. The study further examines the mechanisms behind these findings, suggesting that increased indoor worker meetings during strikes exacerbated disease spread. Using a Synthetic Difference-in-Differences approach, the research provides evidence that public gathering bans during strikes had unintended consequences, prompting workers to move their meetings indoors, where the risk of transmission was higher. These findings offer crucial insights for pandemic preparedness, emphasizing the role of labor market dynamics in shaping disease transmission.
+        </div>
 
         <p><strong>The Long-Term Effects of Hospital Deliveries</strong><br>
-        <em>Abstract:</em> (With Martin Fischer, Martin Karlsson, Martin Lövdén, and Therese Nilsson) [Abstract content]</p>
+        <em>Abstract:</em> <span class="toggle-abstract" onclick="toggleAbstract('abstract3')">Click for abstract +</span>
+        <div id="abstract3" class="abstract-text">
+            (With Martin Fischer, Martin Karlsson, Martin Lövdén, and Therese Nilsson) [Abstract content]
+        </div>
 
         <h3>Published Papers</h3>
         <p><em>The 1918–1919 Influenza Pandemic in Economic History.</em> <strong>Oxford Research Encyclopedia of Economics and Finance</strong>, 2022, with M. Karlsson and Daniel Kühnle.</p>
@@ -128,6 +141,20 @@
     <footer>
         <p>&copy; Nikolaos Prodromidis, 2024</p>
     </footer>
+
+    <script>
+        function toggleAbstract(id) {
+            var abstractText = document.getElementById(id);
+            var toggleLink = abstractText.previousElementSibling; // Gets the "Click for abstract" link
+            if (abstractText.style.display === 'none') {
+                abstractText.style.display = 'block';
+                toggleLink.textContent = 'Click to hide abstract -'; // Change link text
+            } else {
+                abstractText.style.display = 'none';
+                toggleLink.textContent = 'Click for abstract +'; // Reset link text
+            }
+        }
+    </script>
 
 </body>
 </html>
