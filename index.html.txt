@@ -149,7 +149,7 @@
         <div class="container">
             <img src="https://raw.githubusercontent.com/nikolaosprodromidis/nikolaosprodromidis.github.io/master/photo.jpg" alt="Nikolaos Prodromidis">
             <div class="text">
-                <p>Welcome to my personal website. I am a PhD candidate in Economics at the University of Duisburg-Essen, and my research focuses on topics at the intersection of health and labor economics.</p>
+                <p>Welcome to my personal website. I am a Browaldh Postdoctoral Fellow at the Unit of Economic History, Umeå University. My research focuses on topics at the intersection of health and labor economics.</p>
                 <p>In my dissertation, I analyze significant historical events from the early welfare state in Sweden, including the reform establishing the 8-hour workday, major labor strikes, and the expansion of the healthcare sector, along with their consequences. Using early 20th-century Sweden as a case study, I combine high-quality administrative data with quasi-experimental econometric methods to address policy-relevant questions.</p>
                 <p>My CV is linked <a href="CV_URL">here</a>.</p>
                 <p>To contact me, my email is: <strong>nikolaos.prodromidis@uni-due.de</strong></p>
